@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Básico -->
+    <title>Contato - DevFolio</title>
+    <meta name="description"
+        content="Entre em contato comigo para discutir projetos, oportunidades de trabalho ou apenas para trocar uma ideia sobre desenvolvimento web.">
+    <meta name="keywords" content="Contato, Email, Formulário, Desenvolvedor, Trabalho, Projeto">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">DevFolio</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre Mim</a></li>
+                <li class="nav-item"><a href="Projetos.html" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link active">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Título da Página -->
+        <section class="page-header">
+            <h1>Entre em Contato</h1>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section class="contact-section">
+            <div class="contact-form reveal-on-scroll">
+                <h2>Vamos Conversar!</h2>
+                <p>Tem algum projeto em mente? Quer discutir uma oportunidade de trabalho? Ou apenas quer trocar uma ideia sobre desenvolvimento web? Ficarei feliz em conversar com você!</p>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Assunto:</label>
+                        <input type="text" id="subject" name="subject">
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                    
+                    <div id="form-success" class="success-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 DevFolio. Criado por Felipe Medina. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- jQuery via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Script Customizado -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
